@@ -1,0 +1,36 @@
+version: '3.8'
+services:
+  database:
+    image: mysql:5.7
+    container_name: database
+    environment:
+      - MYSQL_ROOT_PASSWORD=kali
+      - MYSQL_DATABASE=moso
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysqldata:/var/lib/mysql
+    networks:
+      - moso
+
+  flask_app:
+    build: .
+    container_name: moso
+    image: bakhtawar375/moso:latest
+    environment:
+      - MYSQL_HOST=database
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=kali
+      - MYSQL_DATABASE=moso
+    ports:
+      - "5000:5000"
+    networks:
+      - moso
+    depends_on:
+      - database
+
+networks:
+  moso:
+
+volumes:
+  mysqldata:
