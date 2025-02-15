@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+ name: moso
+ labels:
+  app: moso
+
+spec:
+ type: ClusterIP
+ selector:
+  app: moso
+ ports:
+  - protocol: TCP
+    port: 5000
+    targetPort: 5000
+
+
+
+

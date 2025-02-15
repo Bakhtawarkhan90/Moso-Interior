@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: moso
+ labels:
+  app: moso
+
+spec:
+ replicas: 1
+ selector:
+   matchLabels:
+     app: moso
+ template:
+  metadata:
+   labels:
+    app: moso
+  spec:
+   containers:
+    - name: moso
+      image: bakhtawar375/moso
+      ports:
+       - containerPort: 5000
+   
