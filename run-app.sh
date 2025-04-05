@@ -18,6 +18,7 @@ sudo docker compose version
 
 
 echo "**************************RUNNING PROJECT*************************** "
+git clone https://github.com/Bakhtawarkhan90/Moso-Interior.git
 cd /home/ubuntu/Moso-Interior
 docker compose down
 docker compose up --build -d
