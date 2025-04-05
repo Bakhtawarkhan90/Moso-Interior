@@ -1,5 +1,8 @@
+#!/bin/bash
 # Downloading Docker and Docker Compose
-
+echo "*************Clonning code************ "
+git clone https://github.com/Bakhtawarkhan90/Moso-Interior.git
+cd Moso-Interior
 echo "****************************** Installing Docker and Docker Compose **************************"
 sudo apt update && sudo apt-get install -y docker.io
 sudo apt-get install docker-compose-v2
