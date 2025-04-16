@@ -11,7 +11,13 @@ Before you begin, make sure you have the following installed:
 - Docker Compose
 - Git (optional, for cloning the repository)
 
-## Setup
+## To run this APP through Shell-Script in one command
+ ```bash
+   git clone https://github.com/Bakhtawarkhan90/Moso-Interior.git
+   cd Moso-Interior && chmod 777 run-app.sh && ./run-app.sh
+   ```
+
+## ## To run this APP through Docker-Compose
 
 1. Clone this repository (if you haven't already):
 
@@ -36,13 +42,8 @@ Before you begin, make sure you have the following installed:
 
 2. Access the Flask app in your web browser:
 
-   - Backend: [http://localhost:5000](http://localhost:5000)
+   - Web: [http://localhost:5000](http://localhost:5000)
 
-## To run this APP through Shell-Script in one command
- ```bash
-   git clone https://github.com/Bakhtawarkhan90/Moso-Interior.git
-   cd Gym && chmod 777 run-app.sh && ./run-app.sh
-   ```
 
 ## To run this two-tier application without Docker Compose
 
@@ -110,10 +111,4 @@ ii) Backend container:
 - Be cautious when executing SQL queries directly. Validate and sanitize user inputs to prevent vulnerabilities like SQL injection.
 - If you encounter issues, check Docker logs and error messages for troubleshooting.
 
-# WELCOME TO  GYMSO !
 
-## Home Page
-![Home Page](./Screenshot%202025-02-10%20225118.png)
-
-## Shop Page
-![Sub Page](./Screenshot%202025-02-10%20225226.png)
