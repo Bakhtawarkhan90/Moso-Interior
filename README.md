@@ -15,6 +15,8 @@ Before you begin, make sure you have the following installed:
 ## To run this APP through Shell-Script in one command
  ```bash
    git clone https://github.com/Bakhtawarkhan90/Moso-Interior.git
+```
+```bash
    cd Moso-Interior && chmod 777 run-app.sh && ./run-app.sh
    ```
 
