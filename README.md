@@ -10,6 +10,7 @@ Before you begin, make sure you have the following installed:
 - Docker
 - Docker Compose
 - Git (optional, for cloning the repository)
+```
 
 ## To run this APP through Shell-Script in one command
  ```bash
